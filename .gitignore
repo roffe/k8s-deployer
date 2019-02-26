@@ -1,0 +1,7 @@
+tmp
+tmp/*
+tmp2
+tmp2/*
+bin/kubectl
+function_payload.zip
+outputfile.txt

@@ -1,0 +1,1 @@
+This repo contains the k8s deployer function described in the medium article about how the pipeline at Shopgun works
