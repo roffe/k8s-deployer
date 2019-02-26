@@ -188,7 +188,7 @@ resource "aws_lambda_function" "k8s_deploy" {
   role             = "${aws_iam_role.lambda.arn}"
   source_code_hash = "${base64sha256(file("./function_payload.zip"))}"
   runtime          = "python3.6"
-  kms_key_arn      = "arn:aws:kms:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:key/${var.slack_hook_url}"
+  kms_key_arn      = "arn:aws:kms:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:key/${var.kms_id}"
 
   environment {
     variables = {

@@ -2,6 +2,7 @@
 if [ ! -f bin/kubectl ]; then
     mkdir -p bin
     wget https://storage.googleapis.com/kubernetes-release/release/v1.11.6/bin/linux/amd64/kubectl -O ./bin/kubectl
+    chmod +x ./bin/kubectl
 fi
 rm -f function_payload.zip
 rm -rf tmp
