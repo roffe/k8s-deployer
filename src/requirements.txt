@@ -3,4 +3,4 @@ Jinja2==2.10
 botocore==1.10.2
 boto3==1.7.2
 kubernetes==6.0.0
-PyYAML==4.2b4
+PyYAML==5.4
